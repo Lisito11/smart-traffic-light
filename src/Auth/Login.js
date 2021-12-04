@@ -30,6 +30,7 @@ export const Login = () => {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           placeholder="E-mail Address"
+          autoComplete={true}
         />
         <input
           type="password"
