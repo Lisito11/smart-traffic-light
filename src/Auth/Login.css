@@ -11,11 +11,13 @@
     text-align: center;
     background-color: #dcdcdc;
     padding: 30px;
+    border-radius: 5px;
   }
   .login__textBox {
     padding: 10px;
     font-size: 18px;
     margin-bottom: 10px;
+    border-radius: 5px;
   }
   .login__btn {
     padding: 10px;
@@ -24,10 +26,15 @@
     border: none;
     color: white;
     background-color: black;
+    border-radius: 5px;
   }
   .login__google {
     background-color: #4285f4;
   }
   .login div {
     margin-top: 7px;
+  }
+
+  .login-background{
+    background-color: antiquewhite;
   }

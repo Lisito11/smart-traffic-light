@@ -19,7 +19,21 @@
     border: none;
     color: white;
     background-color: black;
+    border-radius: 5px;
+
   }
   .dashboard div {
     margin-top: 7px;
+    border-radius: 5px;
+
   }
+
+  .dashboard-bg{
+    background-color: azure;
+    background-image: url("https://media.giphy.com/media/3o72wM1FjIMBWGxnFu/giphy.gif"); 
+    background-position: center; 
+    background-size: contain;
+    height: 100vh;
+    width: 100vw; 
+}
+

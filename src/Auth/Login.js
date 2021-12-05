@@ -22,7 +22,7 @@ export const Login = () => {
 
 
   return (
-    <div className="login">
+    <div className="login login-background">
       <div className="login__container">
         <input
           type="text"

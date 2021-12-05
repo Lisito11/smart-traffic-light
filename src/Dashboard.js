@@ -31,15 +31,15 @@ export const Dashboard = () => {
   }, [user, loading, history]);
 
   return (
-    <div className="dashboard">
+    <div className="dashboard dashboard-bg">
       <div className="dashboard__container">
-        Logged in as
         <div>{name}</div>
-        <div>{user?.email}</div>
+        <div>Metros: <b>50m 🚶‍♂️</b></div>
+        <div>Pasos: <b>500 pasos 🚶‍♂️</b></div>
         <button className="dashboard__btn" onClick={logout}>
           Logout
         </button>
-      </div>
+      </div>   
     </div>
   );
 }

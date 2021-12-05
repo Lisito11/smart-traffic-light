@@ -13,7 +13,7 @@ export const Reset = () => {
     if (user) history.replace("/dashboard");
   }, [user, loading, history]);
   return (
-    <div className="reset">
+    <div className="reset reset-bg">
       <div className="reset__container">
         <input
           type="text"

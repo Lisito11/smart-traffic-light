@@ -30,7 +30,7 @@ export const Register = () => {
 
 
   return (
-    <div className="register">
+    <div className="register register-bg">
       <div className="register__container">
         <input
           type="text"
