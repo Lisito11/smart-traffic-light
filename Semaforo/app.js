@@ -1,8 +1,11 @@
 const luces = document.querySelectorAll('.luces')
-console.log(luces)
 
 let contadorLuz = 0
-let segundos = 1000
+let segundos = 0;
+
+//Luz roja 50 segundos
+//Luz verde 30 segundos
+//Luz amarilla 10 segundos
 
 const mostrarLuz = () =>{
     luces[contadorLuz].className = 'luces'
@@ -12,8 +15,20 @@ const mostrarLuz = () =>{
         contadorLuz = 0
     }
     const luzActual = luces[contadorLuz]
-    luzActual.classList.add(luzActual.getAttribute('color'))    
+    if (luzActual.getAttribute('color') == 'rojo') {
+        segundos = 45000
+    } else if (luzActual.getAttribute('color') == 'amarillo'){
+        segundos = 10000
+    }
+     else if (luzActual.getAttribute('color') == 'verde'){
+        segundos = 30000
+    }
+
+    luzActual.classList.add(luzActual.getAttribute('color'))
+    setInterval(mostrarLuz,segundos)
+    
 }
 
+window.setTimeout(mostrarLuz, 45000);
 
-setInterval(mostrarLuz,segundos)
+
